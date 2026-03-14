@@ -1,0 +1,15 @@
+type User implements Node {
+  id: ID!
+  name: String!
+  email: String!
+  role: Role!
+  createdAt: String!
+  updatedAt: String!
+}
+
+type Query {
+  me: User
+  users: [User!]!
+  teachers: [User!]!
+  students: [User!]!
+}

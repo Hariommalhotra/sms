@@ -1,0 +1,8 @@
+interface Node {
+  id: ID!
+}
+
+type Response {
+  success: Boolean!
+  message: String
+}
