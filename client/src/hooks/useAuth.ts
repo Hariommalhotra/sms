@@ -1,5 +1,5 @@
 import { useAppSelector, useAppDispatch } from "../store/hooks";
-import { setCredentials, logout } from "../store/slices/authSlice";
+import { setCredentials, logout } from "../store/slices/auth.slice";
 
 export const useAuth = () => {
   const token = useAppSelector((state) => state.auth.token);
