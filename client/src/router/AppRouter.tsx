@@ -7,10 +7,6 @@ import { useAppRoutes } from ".";
 const AppRouter = () => {
   const { publicRoutes, protectedRoutes } = useAppRoutes();
   const token = useAppSelector((state) => state.auth.token);
-  console.log(
-    useAppSelector((state) => state),
-    "state",
-  );
 
   console.log(token, "token isthere");
 
